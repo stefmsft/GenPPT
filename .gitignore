@@ -169,3 +169,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+*.pptx
+CACHEDIR.TAG
+Scripts/*
+Lib/*
+Latest-EndUser.yml

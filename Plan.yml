@@ -1,0 +1,11 @@
+replace:
+  - Slide: 1
+    SeekFor : "Title in Slide"
+    ReplaceBy : "My Title"
+plan:
+  - file: "module1.pptx"
+    slides: [1, 2, 3]
+  - file: "module2.pptx"
+    slides: [1, 3]
+  - file: "module3.pptx"
+    slides: [1, 2]
