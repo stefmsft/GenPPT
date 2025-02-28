@@ -1,11 +1,38 @@
-replace:
+Profiles:
+  - Default:
+    Sections: ["Intro","Subject1","Subject2","Thanks"]
+  - ShortVersiob:
+    Sections: ["Intro","Subject1","Subject2","Thanks"]
+    LabelSet: [OnePager]
+TouchUp:
   - Slide: 1
-    SeekFor : "Title in Slide"
-    ReplaceBy : "My Title"
-plan:
-  - file: "module1.pptx"
-    slides: [1, 2, 3]
-  - file: "module2.pptx"
-    slides: [1, 3]
-  - file: "module3.pptx"
-    slides: [1, 2]
+    SeekFor : "ClientName"
+    ReplaceBy : "Portfolio Test"
+Sections:
+  - Intro:
+    Reffile: "RefSlides/Introduction.pptx"
+    slides: [1, 2, 3, 4, 5, 6, 7]
+  - Subject1:
+    - Set: "OnePager"
+      Reffile: "RefSlides/Subject1.pptx"
+      slides: [12]
+    - Set: "Deepdive"
+      Reffile: "RefSlides/Subject1.pptx"
+      slides: [1,2,3,9,10,11,12]
+    - Set: 
+      Reffile: "RefSlides/Subject1.pptx"
+      slides: [1,2,12]
+  - Subject2:
+    - Set: "OnePager"
+      Reffile: "RefSlides/Subject2.pptx"
+      slides: [5]
+    - Set: "Deepdive"
+      Reffile: "RefSlides/Subject2.pptx"
+      slides: [1, 2, 3, 5]
+    - Set: 
+      Reffile: "RefSlides/Subject2.pptx"
+      slides: [1, 2, 3, 6]
+  - Thanks:
+    Description: "Slide de fin"
+    Reffile: "RefSlides/Introduction.pptx"
+    slides: [25]
