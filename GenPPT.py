@@ -57,7 +57,7 @@ def GetTouchUpListFromPlan(plan):
             listofTouchUp.append({"Slide":mslide,"SeekFor":mseek,"ReplaceBy":mreplace})
 
         except Exception as e:
-            print(f"An error occurred while checking profile {profile} {e}")
+            print(f"An error occurred while checking profile {mod} {e}")
             return
     return listofTouchUp
 
